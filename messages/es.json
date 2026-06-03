@@ -1,0 +1,244 @@
+{
+  "Navigation": {
+    "programs": "Programas",
+    "services": "Servicios Adicionales",
+    "benefits": "Beneficios",
+    "about": "Nosotros",
+    "contact": "Contacto",
+    "start": "Comenzar"
+  },
+  "Hero": {
+    "badge": "Transforma Tu Futuro Hoy",
+    "title1": "Domina el Arte del",
+    "titleHighlight": "Éxito Empresarial",
+    "subtitle": "Únete a miles de emprendedores que han escalado sus negocios con nuestras estrategias probadas y mentoría de clase mundial.",
+    "cards": {
+      "online": { "title": "100% en línea", "desc": "Conéctate desde donde quieras y aprovecha recursos digitales, espacios de debate y clases en vivo muy dinámicas." },
+      "time": { "title": "Tiempos a tu medida", "desc": "Programas flexibles que van desde las 4 hasta las 20 horas de duración, diseñados para encajar en tu agenda." },
+      "practical": { "title": "Formación 100% aplicable", "desc": "Olvídate de la teoría aburrida; aprende mediante ejemplos reales, análisis de casos y ejercicios prácticos." },
+      "resources": { "title": "Recursos para llevar", "desc": "Llévate guías, plantillas y herramientas descargables listas para aplicar en tu jornada de trabajo." },
+      "growth": { "title": "Crecimiento integral", "desc": "Potenciamos tus conocimientos técnicos a la par de tus habilidades de liderazgo, comunicación y coordinación de equipos." },
+      "values": { "title": "Propósito y valores", "desc": "Fusionamos la sabiduría ancestral con los negocios para cultivar un liderazgo consciente, con sentido humano y visión comunitaria." }
+    }
+  },
+  "Benefits": {
+    "badge": "Beneficios Clave",
+    "items": {
+      "strategic": { "q": "Dominio de áreas estratégicas", "a": "Domina los pilares clave del éxito actual: negocios, marketing, finanzas, innovación y talento humano" },
+      "skills": { "q": "Habilidades humanas esenciales", "a": "Desarrolla las competencias blandas que hacen la diferencia, como liderazgo, comunicación asertiva, trabajo en equipo y adaptabilidad." },
+      "boost": { "q": "Impulso profesional inmediato", "a": "Acelera tu crecimiento laboral y genera un impacto positivo y visible en tu empresa o emprendimiento desde el primer día." },
+      "flexible": { "q": "Educación flexible y guiada", "a": "Avanza a tu propio ritmo con el respaldo constante de tutorías, mentorías personalizadas y consultorías en grupo." },
+      "holistic": { "q": "Enfoque integral y consciente", "a": "¡Sí! Ofrecemos una garantía de devolución de 30 días en todos los planes. Si no estás satisfecho con tu experiencia, simplemente contáctanos dentro de los 30 días para un reembolso completo, sin preguntas." }
+    }
+  },
+  "Programs": {
+    "badge": "Nuestros Programas",
+    "title": "Catálogo de",
+    "highlight": "Capacitación",
+    "ui": {
+      "tax": "MXN + IVA",
+      "idealFor": "Ideal para:",
+      "includes": "INCLUYE:",
+      "modality": "MODALIDAD:",
+      "duration": "DURACIÓN:",
+      "attendees": "ASISTENTES:",
+      "inCart": "En el Carrito",
+      "buyNow": "Comprar ahora"
+    },
+    "items": {
+      "estrategias-intermedio": {
+        "title": "Diplomado en Estrategias de Negocios – Nivel Intermedio",
+        "target": "Empresarios que desean profundizar en estrategias de negocios sin necesidad de certificación.",
+        "includes": "Análisis de mercados, desarrollo de estrategias competitivas y gestión de proyectos.",
+        "modality": "En línea con acceso a materiales multimedia y foros de discusión.",
+        "duration": "20 horas las cuales pueden ser divididas hasta en 4 días."
+      },
+      "cambio-organizacional": {
+        "title": "Curso de Gestión del Cambio Organizacional",
+        "target": "Líderes y gerentes que buscan implementar cambios efectivos en su organización.",
+        "includes": "Modelos de cambio, resistencia al cambio y gestión de procesos de transformación.",
+        "modality": "En línea con estudios de caso y ejercicios prácticos.",
+        "duration": "6 horas."
+      },
+      "equipos-multidisciplinarios": {
+        "title": "Taller de Manejo de Equipos Multidisciplinarios",
+        "target": "Equipos de trabajo que colaboran en proyectos multidisciplinarios.",
+        "includes": "Dinámicas de grupo, gestión de conflictos y trabajo en equipo.",
+        "modality": "En línea con actividades interactivas.",
+        "duration": "5 horas."
+      },
+      "estrategias-basico": {
+        "title": "Curso de Estrategias de Negocios Módulo Básico",
+        "target": "Emprendedores y pequeñas empresas que buscan una base sólida en estrategias de negocios.",
+        "includes": "Introducción a la planificación estratégica, análisis FODA y toma de decisiones empresariales.",
+        "modality": "100% en línea, acceso a videos y materiales descargables.",
+        "duration": "4 horas."
+      },
+      "marketing-digital": {
+        "title": "Curso de Marketing Digital para Negocios",
+        "target": "Pequeñas empresas que desean mejorar su presencia en línea sin conocimientos previos.",
+        "includes": "Fundamentos de marketing digital, uso de redes sociales y herramientas básicas de SEO.",
+        "modality": "En línea con acceso a foros de discusión.",
+        "duration": "6 horas."
+      },
+      "recursos-humanos": {
+        "title": "Curso de Gestión de Recursos Humanos – Nivel Básico",
+        "target": "Empresas que buscan optimizar sus procesos de recursos humanos sin necesidad de certificación.",
+        "includes": "Introducción a la gestión del talento, procesos de reclutamiento y selección.",
+        "modality": "100% en línea, con materiales de lectura y ejercicios prácticos.",
+        "duration": "5 horas."
+      },
+      "comunicacion-efectiva": {
+        "title": "Taller de Comunicación Efectiva en Equipos de Trabajo",
+        "target": "Equipos de trabajo que desean mejorar su comunicación interna.",
+        "includes": "Técnicas de comunicación asertiva, escucha activa y resolución de conflictos.",
+        "modality": "En línea con sesiones interactivas.",
+        "duration": "4 horas."
+      },
+      "liderazgo-mandos-medios": {
+        "title": "Curso de Liderazgo para Mandos Medios",
+        "target": "Supervisores y jefes de área que buscan desarrollar habilidades de liderazgo.",
+        "includes": "Estilos de liderazgo, motivación de equipos y toma de decisiones.",
+        "modality": "En línea con acceso a webinars y materiales complementarios.",
+        "duration": "8 horas."
+      },
+      "finanzas-no-financieros": {
+        "title": "Curso de Finanzas para no Financieros",
+        "target": "Emprendedores y gerentes que desean comprender los aspectos financieros de su negocio.",
+        "includes": "Conceptos básicos de finanzas, lectura de estados financieros y toma de decisiones financieras.",
+        "modality": "100% en línea, con ejercicios prácticos y casos de estudio.",
+        "duration": "7 horas."
+      }
+    }
+  },
+  "About": {
+    "badge": "Sobre Nosotros",
+    "title": "Construyendo los",
+    "highlight": "Líderes",
+    "suffix": "del Mañana",
+    "desc": "Adven Za fue fundada con una sola misión: democratizar la educación empresarial y empoderar a emprendedores de todo el mundo. Nuestros mentores expertos han construido y escalado negocios por valor de más de $500 millones.",
+    "features": {
+      "experts": { "title": "Formación con Expertos", "desc": "Aprende de veteranos de la industria con historial probado de éxito." },
+      "curriculum": { "title": "Currículo Completo", "desc": "Nuestros cursos cubren desde lo básico hasta estrategias avanzadas." },
+      "community": { "title": "Soporte de Comunidad", "desc": "Únete a una red de emprendedores con ideas afines y crece junto a ellos." },
+      "access": { "title": "Acceso de por Vida", "desc": "Una vez inscrito, accede a tus cursos y actualizaciones para siempre." }
+    }
+  },
+  "Services": {
+    "badge": "Servicios Extra",
+    "title": "Servicios",
+    "highlight": "Adicionales",
+    "desc": "Complementa tu formación en línea con tutorías, mentorías y consultorías personalizadas adaptadas a tus tiempos y necesidades.",
+    "ui": {
+      "priceTax": "Precio + IVA"
+    },
+    "items": {
+      "mini-tutoria": { "title": "Mini tutoría", "desc": "Resolución de dudas puntuales o ejercicios específicos", "modality": "Online", "duration": "10 min", "notes": "Ideal para consultas rápidas o dudas específicas" },
+      "sesion-mentoria": { "title": "Sesión de mentoría", "desc": "Asesoría práctica sobre un tema del curso", "modality": "Online", "duration": "1 hora", "notes": "Personalizado para el alumno" },
+      "consultoria-grupal": { "title": "Consultoría grupal", "desc": "Revisión de proyectos o casos de estudio", "modality": "Online", "duration": "1-2 horas", "notes": "Para equipos pequeños o grupos de estudio" },
+      "apoyo-extendido": { "title": "Apoyo extendido", "desc": "Tutoría individual más detallada", "modality": "Online", "duration": "2-3 horas", "notes": "Ideal para preparación de presentaciones o planes de negocio" },
+      "paquete-seguimiento": { "title": "Paquete completo de seguimiento", "desc": "Acompañamiento durante todo el curso: dudas, revisión de ejercicios, recomendaciones", "modality": "Online", "duration": "Variable (hasta 10 horas)", "notes": "Perfecto para alumnos que quieren maximizar aprendizaje y aplicar conocimientos al negocio" }
+    }
+  },
+  "CTA": {
+    "badge": "A la medida",
+    "title1": "Un plan ",
+    "titleHighlight": "exclusivo para ti",
+    "subtitle": "Entendemos que cada negocio es único. Diseñamos un programa de capacitación a la medida de tus objetivos y presupuesto.",
+    "btnRequest": "Solicitar un plan",
+    "btnHavePlan": "Ya tengo un plan",
+    "disclaimer": "Nos pondremos en contacto contigo a la brevedad posible."
+  },
+  "Contact": {
+    "title": "Conecta con el conocimiento que transforma.",
+    "info": {
+      "addressLabel": "DIRECCIÓN",
+      "addressValue": "AVENIDA PRESIDENTE MASARYK, N° 178, DEP. 303,\nCOLONIA POLANCO V SECCION,\nALCALDÍA MIGUEL HIDALGO,\nC.P. 11560,\nCIUDAD DE MÉXICO.",
+      "emailLabel": "CORREO",
+      "emailValue": "atencion@advenza.com.mx",
+      "phoneLabel": "TELÉFONO",
+      "phoneValue": "+52 1 55 1741 8261"
+    },
+    "form": {
+      "subtitle": "CUÉNTANOS ACERCA DE TU PROYECTO Y METAS",
+      "name": "Nombre",
+      "company": "Empresa",
+      "email": "Correo electrónico",
+      "goals": "Cuéntenos brevemente cuáles son los objetivos de su proyecto.",
+      "timeframe": "¿Tienes algún plazo en mente?",
+      "budget": "¿Qué presupuesto has destinado a este proyecto?",
+      "submit": "Enviar"
+    }
+  },
+  "CustomPlan": {
+    "title": "A la medida",
+    "form": {
+      "idLabel": "ID de plan",
+      "amountLabel": "Total del plan",
+      "totalLabel": "Total final",
+      "tax": "+ IVA",
+      "addBtn": "Añadir al carrito",
+      "category": "Categoría: Servicios"
+    }
+  },
+  "Footer": {
+    "desc": "Empoderando emprendedores de todo el mundo con estrategias probadas y mentoría de clase mundial.",
+    "catCompany": "Empresa",
+    "catLegal": "Legal",
+    "links": {
+      "about": "Sobre Nosotros",
+      "team": "Nuestro Equipo",
+      "careers": "Carreras",
+      "contact": "Contacto",
+      "privacy": "Política de Privacidad",
+      "terms": "Términos de Servicio",
+      "refunds": "Política de Reembolso"
+    },
+    "copyright": "© 2026 Adven Za. Todos los derechos reservados.",
+    "slogan": "Hecho con pasión para emprendedores"
+  },
+
+  "CartPage": {
+    "back": "Regresar",
+    "title": "Tu Carrito",
+    "empty": "El carrito está vacío",
+    "explore": "Explorar Programas",
+    "summary": "Resumen",
+    "subtotal": "Subtotal",
+    "tax": "IVA (16%)",
+    "total": "Total",
+    "proceed": "Proceder al Pago"
+  },
+  "Checkout": {
+    "back": "Regresar al Carrito",
+    "title": "Detalles de Facturación y Pago",
+    "labels": {
+      "name": "Nombre",
+      "lastName": "Apellidos",
+      "email": "Correo Electrónico",
+      "phone": "Teléfono",
+      "country": "País / Región",
+      "address": "Dirección Completa",
+      "city": "Población / Ciudad",
+      "state": "Región / Estado",
+      "zip": "Código Postal",
+      "notes": "Notas del pedido (opcional)",
+      "notesPlaceholder": "Notas sobre tu pedido..."
+    },
+    "payment": {
+      "title": "Información de Pago (Octano)",
+      "cardName": "Nombre en la tarjeta",
+      "cardNumber": "Número de tarjeta",
+      "expiry": "Vencimiento (MM/YY)",
+      "cvc": "CVV"
+    },
+    "submit": "Completar Pago Seguro",
+    "processing": "Procesando pago..."
+  },
+
+  "Success": {
+    "title": "¡Pago Exitoso!",
+    "desc": "Tu compra se ha procesado correctamente. Hemos enviado un recibo y los detalles de acceso a tu correo electrónico. ¡Bienvenido a la comunidad!",
+    "button": "Volver al Inicio"
+  }
+}

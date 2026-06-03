@@ -1,0 +1,244 @@
+{
+  "Navigation": {
+    "programs": "Programs",
+    "services": "Additional Services",
+    "benefits": "Benefits",
+    "about": "About Us",
+    "contact": "Contact",
+    "start": "Get Started"
+  },
+  "Hero": {
+    "badge": "Transform Your Future Today",
+    "title1": "Master the Art of",
+    "titleHighlight": "Business Success",
+    "subtitle": "Join thousands of entrepreneurs who have scaled their businesses with our proven strategies and world-class mentoring.",
+    "cards": {
+      "online": { "title": "100% Online", "desc": "Connect from anywhere and leverage digital resources, discussion spaces, and highly dynamic live classes." },
+      "time": { "title": "At Your Own Pace", "desc": "Flexible programs ranging from 4 to 20 hours, designed to fit your schedule perfectly." },
+      "practical": { "title": "100% Applicable Training", "desc": "Forget boring theory; learn through real-world examples, case studies, and practical exercises." },
+      "resources": { "title": "Takeaway Resources", "desc": "Get downloadable guides, templates, and tools ready to apply in your daily workflow." },
+      "growth": { "title": "Holistic Growth", "desc": "We boost your technical knowledge alongside your leadership, communication, and team coordination skills." },
+      "values": { "title": "Purpose and Values", "desc": "We merge ancestral wisdom with business to cultivate conscious leadership with human sense and community vision." }
+    }
+  },
+  "Benefits": {
+    "badge": "Key Benefits",
+    "items": {
+      "strategic": { "q": "Mastery of Strategic Areas", "a": "Master the key pillars of modern success: business, marketing, finance, innovation, and human talent." },
+      "skills": { "q": "Essential Human Skills", "a": "Develop the soft skills that make a difference, such as leadership, assertive communication, teamwork, and adaptability." },
+      "boost": { "q": "Immediate Professional Boost", "a": "Accelerate your career growth and generate a positive, visible impact in your company or startup from day one." },
+      "flexible": { "q": "Flexible and Guided Education", "a": "Advance at your own pace with constant backing from tutoring, personalized mentoring, and group consulting." },
+      "holistic": { "q": "Holistic and Conscious Approach", "a": "Yes! We offer a 30-day money-back guarantee on all plans. If you are not satisfied with your experience, simply contact us within 30 days for a full refund, no questions asked." }
+    }
+  },
+  "Programs": {
+    "badge": "Our Programs",
+    "title": "Training",
+    "highlight": "Catalog",
+    "ui": {
+      "tax": "MXN + Tax",
+      "idealFor": "Ideal for:",
+      "includes": "INCLUDES:",
+      "modality": "MODALITY:",
+      "duration": "DURATION:",
+      "attendees": "ATTENDEES:",
+      "inCart": "In Cart",
+      "buyNow": "Buy Now"
+    },
+    "items": {
+      "estrategias-intermedio": {
+        "title": "Diploma in Business Strategies – Intermediate Level",
+        "target": "Business owners looking to deepen their business strategies without the need for certification.",
+        "includes": "Market analysis, competitive strategy development, and project management.",
+        "modality": "Online with access to multimedia materials and discussion forums.",
+        "duration": "20 hours which can be divided into up to 4 days."
+      },
+      "cambio-organizacional": {
+        "title": "Organizational Change Management Course",
+        "target": "Leaders and managers looking to implement effective changes in their organization.",
+        "includes": "Change models, resistance to change, and transformation process management.",
+        "modality": "Online with case studies and practical exercises.",
+        "duration": "6 hours."
+      },
+      "equipos-multidisciplinarios": {
+        "title": "Multidisciplinary Team Management Workshop",
+        "target": "Work teams collaborating on multidisciplinary projects.",
+        "includes": "Group dynamics, conflict management, and teamwork.",
+        "modality": "Online with interactive activities.",
+        "duration": "5 hours."
+      },
+      "estrategias-basico": {
+        "title": "Business Strategies Course Basic Module",
+        "target": "Entrepreneurs and small businesses looking for a solid foundation in business strategies.",
+        "includes": "Introduction to strategic planning, SWOT analysis, and business decision making.",
+        "modality": "100% online, access to videos and downloadable materials.",
+        "duration": "4 hours."
+      },
+      "marketing-digital": {
+        "title": "Digital Marketing for Business Course",
+        "target": "Small businesses wanting to improve their online presence with no prior knowledge.",
+        "includes": "Digital marketing fundamentals, social media usage, and basic SEO tools.",
+        "modality": "Online with access to discussion forums.",
+        "duration": "6 hours."
+      },
+      "recursos-humanos": {
+        "title": "Human Resources Management Course – Basic Level",
+        "target": "Companies looking to optimize their HR processes without the need for certification.",
+        "includes": "Introduction to talent management, recruitment processes, and selection.",
+        "modality": "100% online, with reading materials and practical exercises.",
+        "duration": "5 hours."
+      },
+      "comunicacion-efectiva": {
+        "title": "Effective Communication in Work Teams Workshop",
+        "target": "Work teams wanting to improve their internal communication.",
+        "includes": "Assertive communication techniques, active listening, and conflict resolution.",
+        "modality": "Online with interactive sessions.",
+        "duration": "4 hours."
+      },
+      "liderazgo-mandos-medios": {
+        "title": "Leadership Course for Middle Management",
+        "target": "Supervisors and area managers looking to develop leadership skills.",
+        "includes": "Leadership styles, team motivation, and decision making.",
+        "modality": "Online with access to webinars and complementary materials.",
+        "duration": "8 hours."
+      },
+      "finanzas-no-financieros": {
+        "title": "Finance Course for Non-Financials",
+        "target": "Entrepreneurs and managers wanting to understand the financial aspects of their business.",
+        "includes": "Basic finance concepts, reading financial statements, and financial decision making.",
+        "modality": "100% online, with practical exercises and case studies.",
+        "duration": "7 hours."
+      }
+    }
+  },
+  "About": {
+    "badge": "About Us",
+    "title": "Building the",
+    "highlight": "Leaders",
+    "suffix": "of Tomorrow",
+    "desc": "Adven Za was founded with a single mission: to democratize business education and empower entrepreneurs around the world. Our expert mentors have built and scaled businesses worth over $500 million.",
+    "features": {
+      "experts": { "title": "Expert Training", "desc": "Learn from industry veterans with a proven track record of success." },
+      "curriculum": { "title": "Comprehensive Curriculum", "desc": "Our courses cover everything from the basics to advanced strategies." },
+      "community": { "title": "Community Support", "desc": "Join a network of like-minded entrepreneurs and grow alongside them." },
+      "access": { "title": "Lifetime Access", "desc": "Once enrolled, access your courses and updates forever." }
+    }
+  },
+  "Services": {
+    "badge": "Extra Services",
+    "title": "Additional",
+    "highlight": "Services",
+    "desc": "Complement your online training with personalized tutoring, mentoring, and consulting adapted to your schedule and needs.",
+    "ui": {
+      "priceTax": "Price + Tax"
+    },
+    "items": {
+      "mini-tutoria": { "title": "Mini Tutoring", "desc": "Resolution of specific doubts or particular exercises", "modality": "Online", "duration": "10 min", "notes": "Ideal for quick consultations or specific doubts" },
+      "sesion-mentoria": { "title": "Mentoring Session", "desc": "Practical advice on a course topic", "modality": "Online", "duration": "1 hour", "notes": "Personalized for the student" },
+      "consultoria-grupal": { "title": "Group Consulting", "desc": "Review of projects or case studies", "modality": "Online", "duration": "1-2 hours", "notes": "For small teams or study groups" },
+      "apoyo-extendido": { "title": "Extended Support", "desc": "More detailed individual tutoring", "modality": "Online", "duration": "2-3 hours", "notes": "Ideal for preparing presentations or business plans" },
+      "paquete-seguimiento": { "title": "Full Tracking Package", "desc": "Accompaniment throughout the course: doubts, exercise review, recommendations", "modality": "Online", "duration": "Variable (up to 10 hours)", "notes": "Perfect for students who want to maximize learning and apply knowledge to the business" }
+    }
+  },
+  "CTA": {
+    "badge": "Tailor-made",
+    "title1": "An exclusive plan ",
+    "titleHighlight": "just for you",
+    "subtitle": "We understand that every business is unique. We design a training program tailored to your goals and budget.",
+    "btnRequest": "Request a plan",
+    "btnHavePlan": "I already have a plan",
+    "disclaimer": "We will get in touch with you as soon as possible."
+  },
+  "Contact": {
+    "title": "Connect with the knowledge that transforms.",
+    "info": {
+      "addressLabel": "ADDRESS",
+      "addressValue": "AVENIDA PRESIDENTE MASARYK, N° 178, APT. 303,\nPOLANCO V SECCION,\nMIGUEL HIDALGO,\nZIP 11560,\nMEXICO CITY.",
+      "emailLabel": "EMAIL",
+      "emailValue": "atencion@advenza.com.mx",
+      "phoneLabel": "PHONE",
+      "phoneValue": "+52 1 55 1741 8261"
+    },
+    "form": {
+      "subtitle": "TELL US ABOUT YOUR PROJECT AND GOALS",
+      "name": "Name",
+      "company": "Company",
+      "email": "Email",
+      "goals": "Briefly tell us the objectives of your project.",
+      "timeframe": "Do you have a timeframe in mind?",
+      "budget": "What budget have you allocated for this project?",
+      "submit": "Send"
+    }
+  },
+  "CustomPlan": {
+    "title": "Tailor-made",
+    "form": {
+      "idLabel": "Plan ID",
+      "amountLabel": "Plan Total",
+      "totalLabel": "Final Total",
+      "tax": "+ Tax",
+      "addBtn": "Add to cart",
+      "category": "Category: Services"
+    }
+  },
+  "Footer": {
+    "desc": "Empowering entrepreneurs worldwide with proven strategies and world-class mentoring.",
+    "catCompany": "Company",
+    "catLegal": "Legal",
+    "links": {
+      "about": "About Us",
+      "team": "Our Team",
+      "careers": "Careers",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "refunds": "Refund Policy"
+    },
+    "copyright": "© 2024 Adven Za. All rights reserved.",
+    "slogan": "Made with passion for entrepreneurs"
+  },
+
+  "CartPage": {
+    "back": "Go Back",
+    "title": "Your Cart",
+    "empty": "Your cart is empty",
+    "explore": "Explore Programs",
+    "summary": "Summary",
+    "subtotal": "Subtotal",
+    "tax": "Tax (16%)",
+    "total": "Total",
+    "proceed": "Proceed to Checkout"
+  },
+  "Checkout": {
+    "back": "Back to Cart",
+    "title": "Billing and Payment Details",
+    "labels": {
+      "name": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "phone": "Phone Number",
+      "country": "Country / Region",
+      "address": "Full Address",
+      "city": "City",
+      "state": "State / Region",
+      "zip": "Postal Code",
+      "notes": "Order Notes (optional)",
+      "notesPlaceholder": "Notes about your order..."
+    },
+    "payment": {
+      "title": "Payment Information (Octano)",
+      "cardName": "Name on Card",
+      "cardNumber": "Card Number",
+      "expiry": "Expiration (MM/YY)",
+      "cvc": "CVV"
+    },
+    "submit": "Complete Secure Payment",
+    "processing": "Processing payment..."
+  },
+
+  "Success": {
+    "title": "Payment Successful!",
+    "desc": "Your purchase has been processed correctly. We have sent a receipt and access details to your email. Welcome to the community!",
+    "button": "Back to Home"
+  }
+}
