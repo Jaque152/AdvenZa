@@ -9,21 +9,24 @@ import { useRouter } from "next/navigation";
 import { useTranslations } from "next-intl";
 
 export default function CartPage() {
-  const { items, removeFromCart, totalPrice } = useCart();
+  const { items, removeFromCart, totalPrice, isMounted } = useCart();
   const router = useRouter();
   const t = useTranslations("CartPage");
   
+  // PREVENCIÓN DE ERRORES DE HIDRATACIÓN DE NEXT.JS
+  if (!isMounted) return <div className="min-h-screen bg-night-950 pt-32 pb-24 px-4"></div>;
+
   const iva = totalPrice * 0.16;
   const finalTotal = totalPrice + iva;
+
+  // Utilidad para formatear la moneda sin que arroje NaN
+  const formatMoney = (val: number) => val.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
   return (
     <div className="min-h-screen bg-night-950 pt-32 pb-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
         
-        <button 
-          onClick={() => router.back()} 
-          className="flex items-center text-night-400 hover:text-fire-400 mb-8 transition-colors font-medium"
-        >
+        <button onClick={() => router.back()} className="flex items-center text-night-400 hover:text-fire-400 mb-8 transition-colors font-medium">
           <ArrowLeft className="w-5 h-5 mr-2" />
           {t("back")}
         </button>
@@ -44,20 +47,13 @@ export default function CartPage() {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="md:col-span-2 space-y-4">
               {items.map((item) => (
-                <motion.div 
-                  key={item.id}
-                  layout
-                  className="bg-night-900/80 border border-night-800 rounded-2xl p-6 flex justify-between items-center"
-                >
+                <motion.div key={item.id} layout className="bg-night-900/80 border border-night-800 rounded-2xl p-6 flex justify-between items-center">
                   <div>
                     <h3 className="text-xl font-semibold text-white">{item.name}</h3>
                     <p className="text-night-400 text-sm mt-1">{item.description}</p>
-                    <span className="text-fire-400 font-bold mt-2 block">${item.price.toLocaleString()} MXN</span>
+                    <span className="text-fire-400 font-bold mt-2 block">${formatMoney(item.price)} MXN</span>
                   </div>
-                  <button
-                    onClick={() => removeFromCart(item.id)}
-                    className="p-3 text-night-500 hover:text-red-400 hover:bg-red-500/10 rounded-xl transition-all"
-                  >
+                  <button onClick={() => removeFromCart(item.id)} className="p-3 text-night-500 hover:text-red-400 hover:bg-red-500/10 rounded-xl transition-all">
                     <Trash2 className="w-5 h-5" />
                   </button>
                 </motion.div>
@@ -69,15 +65,15 @@ export default function CartPage() {
               <div className="space-y-3 mb-6">
                 <div className="flex justify-between text-night-300">
                   <span>{t("subtotal")}</span>
-                  <span>${totalPrice.toLocaleString()} MXN</span>
+                  <span>${formatMoney(totalPrice)} MXN</span>
                 </div>
                 <div className="flex justify-between text-night-300">
                   <span>{t("tax")}</span>
-                  <span>${iva.toLocaleString()} MXN</span>
+                  <span>${formatMoney(iva)} MXN</span>
                 </div>
                 <div className="flex justify-between text-white font-bold text-xl pt-4 border-t border-night-800">
                   <span>{t("total")}</span>
-                  <span>${finalTotal.toLocaleString()} MXN</span>
+                  <span>${formatMoney(finalTotal)} MXN</span>
                 </div>
               </div>
               <Link href="/checkout">

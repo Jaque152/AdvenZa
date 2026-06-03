@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Zap, ShoppingCart, Globe } from "lucide-react";
+import { Menu, X, ShoppingCart, Globe } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useCart } from "@/context/CartContext";
 import { useTranslations, useLocale } from "next-intl";
@@ -68,11 +68,12 @@ export function Navigation() {
           <Link href={`/${locale}`} className="flex items-center gap-3 group">
             <div className="relative">
               <img 
-              src="/Advenza-logo.png" 
-              alt="Advenza Logo" 
-              className="h-10 w-auto object-contain" 
-            />
+                src="/Advenza-logo.png" 
+                alt="Advenza Logo" 
+                className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
+              />
             </div>
+            {/* Opcional: Puedes borrar este span si tu logo (imagen) ya contiene el texto "Adven Za." */}
             <span className="text-xl font-bold text-white tracking-tight">
               Adven Za<span className="text-fire-500">.</span>
             </span>
@@ -80,10 +81,14 @@ export function Navigation() {
 
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a key={link.name} href={link.href} className="text-sm font-medium text-night-400 hover:text-fire-400 transition-colors duration-300 relative group">
+              <Link 
+                key={link.name} 
+                href={link.href} 
+                className="text-sm font-medium text-night-400 hover:text-fire-400 transition-colors duration-300 relative group"
+              >
                 {link.name}
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-fire-500 to-amber-400 group-hover:w-full transition-all duration-300" />
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -108,6 +113,11 @@ export function Navigation() {
             <LanguageSwitcher />
             <button onClick={() => setIsCartOpen(true)} className="relative p-2 text-night-400 hover:text-white">
               <ShoppingCart className="w-6 h-6" />
+              {itemCount > 0 && (
+                <span className="absolute -top-1 -right-1 w-5 h-5 bg-gradient-to-r from-fire-500 to-amber-500 rounded-full flex items-center justify-center text-xs font-bold text-white">
+                  {itemCount}
+                </span>
+              )}
             </button>
             <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="p-2 text-night-400 hover:text-white">
               {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -126,10 +136,22 @@ export function Navigation() {
           >
             <div className="px-4 py-6 space-y-4">
               {navLinks.map((link) => (
-                <a key={link.name} href={link.href} onClick={() => setIsMobileMenuOpen(false)} className="block text-lg text-night-300 hover:text-fire-400 py-2">
+                <Link 
+                  key={link.name} 
+                  href={link.href} 
+                  onClick={() => setIsMobileMenuOpen(false)} 
+                  className="block text-lg text-night-300 hover:text-fire-400 py-2"
+                >
                   {link.name}
-                </a>
+                </Link>
               ))}
+              <div className="pt-4 space-y-3">
+                <Link href={`/${locale}/contact`} onClick={() => setIsMobileMenuOpen(false)}>
+                  <Button className="w-full bg-gradient-to-r from-fire-500 to-amber-500 hover:from-fire-600 hover:to-amber-600 text-white font-semibold">
+                    {t("start")}
+                  </Button>
+                </Link>
+              </div>
             </div>
           </motion.div>
         )}

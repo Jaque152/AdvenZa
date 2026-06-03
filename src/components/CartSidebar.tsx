@@ -1,29 +1,16 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ShoppingCart, Trash2, CreditCard, Check, Sparkles } from "lucide-react";
+import { X, ShoppingCart, Trash2, Sparkles } from "lucide-react";
 import { useCart } from "@/context/CartContext";
 import { Button } from "@/components/ui/button";
-import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { useLocale } from "next-intl";
 
 export function CartSidebar() {
   const { items, removeFromCart, clearCart, totalPrice, isCartOpen, setIsCartOpen } = useCart();
-  const [isCheckingOut, setIsCheckingOut] = useState(false);
-  const [checkoutComplete, setCheckoutComplete] = useState(false);
-
-  const handleCheckout = () => {
-    setIsCheckingOut(true);
-    // Simulate checkout process
-    setTimeout(() => {
-      setIsCheckingOut(false);
-      setCheckoutComplete(true);
-      setTimeout(() => {
-        clearCart();
-        setCheckoutComplete(false);
-        setIsCartOpen(false);
-      }, 2500);
-    }, 2000);
-  };
+  const router = useRouter();
+  const locale = useLocale();
 
   return (
     <AnimatePresence>
@@ -69,23 +56,7 @@ export function CartSidebar() {
 
             {/* Cart Items */}
             <div className="flex-1 overflow-y-auto p-6">
-              {checkoutComplete ? (
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  className="flex flex-col items-center justify-center h-full text-center"
-                >
-                  <div className="w-20 h-20 bg-gradient-to-br from-green-500 to-emerald-500 rounded-full flex items-center justify-center mb-6 animate-pulse">
-                    <Check className="w-10 h-10 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-white mb-2 font-display">
-                    ¡Compra Exitosa!
-                  </h3>
-                  <p className="text-night-400">
-                    Te hemos enviado un correo con los detalles de tu compra.
-                  </p>
-                </motion.div>
-              ) : items.length === 0 ? (
+              {items.length === 0 ? (
                 <div className="flex flex-col items-center justify-center h-full text-center">
                   <div className="w-20 h-20 bg-night-800/50 rounded-full flex items-center justify-center mb-6">
                     <ShoppingCart className="w-10 h-10 text-night-600" />
@@ -159,7 +130,7 @@ export function CartSidebar() {
             </div>
 
             {/* Footer */}
-            {items.length > 0 && !checkoutComplete && (
+            {items.length > 0 && (
               <div className="p-6 border-t border-night-800 bg-night-900/80 backdrop-blur-sm">
                 {/* Desglose de precios con IVA */}
                 <div className="flex items-center justify-between mb-2">
@@ -177,9 +148,12 @@ export function CartSidebar() {
                   </span>
                 </div>
 
-                {/* Checkout Button - Redirigir a página de carrito o checkout */}
+                {/* Checkout Button - Corrección con router.push */}
                 <Button
-                  onClick={() => window.location.href = '/cart'}
+                  onClick={() => {
+                    setIsCartOpen(false); // Cerramos el sidebar
+                    router.push(`/${locale}/cart`); // Navegamos usando React Router
+                  }}
                   className="w-full bg-gradient-to-r from-fire-500 to-amber-500 hover:from-fire-600 hover:to-amber-600 text-white font-semibold py-6 text-lg shadow-lg shadow-fire-500/25 group"
                 >
                   <ShoppingCart className="w-5 h-5 mr-2" />
