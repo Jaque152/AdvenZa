@@ -134,9 +134,7 @@ export default function CheckoutPage() {
                 <img 
                   src="/logo-octano-2.png" 
                   alt="Octano" 
-                  className="h-6 w-auto object-contain  opacity-80" 
-                  /* Nota: brightness-0 invert vuelve el logo blanco. Si el logo de Octano ya tiene colores brillantes o quieres su color original, borra esas dos clases */
-                />
+                  className="h-6 w-auto object-contain  opacity-80"                 />
               </div>
             </div>
 
