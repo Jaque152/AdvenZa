@@ -236,8 +236,8 @@ export async function POST(request: Request) {
         `;
 
         await resend.emails.send({
-          from: 'Adven Za Sistema <sistema@advenza.com.mx>',
-          to: 'ventas@advenza.com.mx', 
+          from: 'Adven Za Sistema <atencion@advenza.com.mx>',
+          to: 'atencion@advenza.com.mx', 
           subject: `💰 Nueva Venta Registrada: ${clientData.nombre} ${clientData.apellidos}`,
           html: getEmailHtml(
             '¡Nueva Venta Aprobada!', 

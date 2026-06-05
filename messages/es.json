@@ -226,7 +226,7 @@
       "notesPlaceholder": "Notas sobre tu pedido..."
     },
     "payment": {
-      "title": "Información de Pago (Octano)",
+      "title": "Información de Pago",
       "cardName": "Nombre en la tarjeta",
       "cardNumber": "Número de tarjeta",
       "expiry": "Vencimiento (MM/YY)",

@@ -226,7 +226,7 @@
       "notesPlaceholder": "Notes about your order..."
     },
     "payment": {
-      "title": "Payment Information (Octano)",
+      "title": "Payment Information ",
       "cardName": "Name on Card",
       "cardNumber": "Card Number",
       "expiry": "Expiration (MM/YY)",

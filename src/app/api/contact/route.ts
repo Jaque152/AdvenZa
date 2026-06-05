@@ -10,7 +10,7 @@ export async function POST(request: Request) {
 
     await resend.emails.send({
       from: 'Adven Za Contacto <atencion@advenza.com.mx>',
-      to: 'ventas@advenza.com.mx', 
+      to: 'atencion@advenza.com.mx', 
       subject: `Nuevo Proyecto: ${nombre} (${empresa})`,
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px; color: #333;">

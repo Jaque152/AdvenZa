@@ -744,10 +744,14 @@ function PageContent() {
 
 export default function Home() {
   return (
-    <CartProvider>
-      <main className="min-h-screen bg-night-950">
-        <PageContent />
-      </main>
-    </CartProvider>
+    <main className="min-h-screen bg-night-950">
+      <HeroSection />
+      <BenefitsSection />
+      <ProgramsSection />
+      <AboutSection />
+      <AdditionalServicesSection />
+      <CTASection />
+      <Footer />
+    </main>
   );
 }
