@@ -108,6 +108,13 @@
         "includes": "Basic finance concepts, reading financial statements, and financial decision making.",
         "modality": "100% online, with practical exercises and case studies.",
         "duration": "7 hours."
+      },
+      "curso-innovacion-creatividad-empresarial": {
+        "title": "Business Innovation and Creativity Course",
+        "target": "Companies looking to foster innovation in their processes.",
+        "includes": "Creativity techniques, development of innovative products, and innovation management.",
+        "modality": "100% online, with access to videos and practical exercises.",
+        "duration": "6 hours."
       }
     }
   },
@@ -191,8 +198,8 @@
       "careers": "Careers",
       "contact": "Contact",
       "privacy": "Privacy Policy",
-      "terms": "Terms of Service",
-      "refunds": "Refund Policy"
+      "terms": "Terms and Conditions of Use",
+      "refunds": "Refund and Return Policy"
     },
     "copyright": "© 2024 Adven Za. All rights reserved.",
     "slogan": "Made with passion for entrepreneurs"

@@ -68,8 +68,11 @@ export function CartSidebar() {
                     Explora nuestros programas y añade el que mejor se adapte a tus objetivos.
                   </p>
                   <Button
-                    onClick={() => setIsCartOpen(false)}
-                    className="bg-gradient-to-r from-fire-500 to-amber-500"
+                    onClick={() => {
+                      setIsCartOpen(false); // Cierra el carrito
+                      router.push(`/${locale}/#programs`); // Navega a la sección de programas
+                    }}
+                    className="bg-gradient-to-r from-fire-500 to-amber-500 hover:from-fire-600 hover:to-amber-600 transition-colors"
                   >
                     Ver Programas
                   </Button>

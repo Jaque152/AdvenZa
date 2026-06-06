@@ -130,7 +130,6 @@ export default function CheckoutPage() {
               
               {/* Badge "Secured by Octano" */}
               <div className="flex items-center gap-3 bg-night-950/50 px-4 py-2 rounded-xl border border-night-800">
-                <span className="text-xs text-night-400 font-medium uppercase tracking-wider">Secured by</span>
                 <img 
                   src="/logo-octano-2.png" 
                   alt="Octano" 

@@ -212,14 +212,25 @@ export async function POST(request: Request) {
           ? `Tu pago ha sido procesado exitosamente mediante nuestra plataforma segura. En breve te enviaremos las instrucciones de acceso.`
           : `Your payment has been successfully processed through our secure platform. We will send you the access instructions shortly.`;
         
-        await resend.emails.send({
+        // Detalles dinámicos para el cliente (Comprobante de sus propios datos)
+        const clientDetails = `
+          <div style="background-color: #222; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+            <h3 style="margin-top: 0; color: ${secondaryColor};">${isEs ? 'Tus Datos de Facturación:' : 'Your Billing Details:'}</h3>
+            <p style="margin: 5px 0; color: ${textMuted};"><strong style="color: ${textColor};">${isEs ? 'Nombre' : 'Name'}:</strong> ${clientData.nombre} ${clientData.apellidos}</p>
+            <p style="margin: 5px 0; color: ${textMuted};"><strong style="color: ${textColor};">Email:</strong> ${clientData.email}</p>
+            <p style="margin: 5px 0; color: ${textMuted};"><strong style="color: ${textColor};">${isEs ? 'Teléfono' : 'Phone'}:</strong> ${clientData.telefono}</p>
+            <p style="margin: 5px 0; color: ${textMuted};"><strong style="color: ${textColor};">${isEs ? 'Dirección' : 'Address'}:</strong> ${clientData.direccion}, ${clientData.poblacion}, ${clientData.region} - ${clientData.pais} (${clientData.cp})</p>
+          </div>
+        `;
+
+        const clientEmailPromise = resend.emails.send({
           from: 'Adven Za <atencion@advenza.com.mx>',
           to: clientData.email,
           subject: clientSubject,
           html: getEmailHtml(
             isEs ? `¡Hola, ${clientData.nombre}!` : `Hi, ${clientData.nombre}!`, 
             clientIntro, 
-            `` // Sin detalles extra para el cliente
+            clientDetails
           )
         });
 
@@ -227,15 +238,15 @@ export async function POST(request: Request) {
         const adminDetails = `
           <div style="background-color: #222; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
             <h3 style="margin-top: 0; color: ${secondaryColor};">Datos del Cliente:</h3>
-            <p style="margin: 5px 0;"><strong>Nombre:</strong> ${clientData.nombre} ${clientData.apellidos}</p>
-            <p style="margin: 5px 0;"><strong>Email:</strong> ${clientData.email}</p>
-            <p style="margin: 5px 0;"><strong>Teléfono:</strong> ${clientData.telefono}</p>
-            <p style="margin: 5px 0;"><strong>Ubicación:</strong> ${clientData.direccion}, ${clientData.poblacion}, ${clientData.region} - ${clientData.pais}</p>
+            <p style="margin: 5px 0; color: ${textMuted};"><strong style="color: ${textColor};">Nombre:</strong> ${clientData.nombre} ${clientData.apellidos}</p>
+            <p style="margin: 5px 0; color: ${textMuted};"><strong style="color: ${textColor};">Email:</strong> ${clientData.email}</p>
+            <p style="margin: 5px 0; color: ${textMuted};"><strong style="color: ${textColor};">Teléfono:</strong> ${clientData.telefono}</p>
+            <p style="margin: 5px 0; color: ${textMuted};"><strong style="color: ${textColor};">Ubicación:</strong> ${clientData.direccion}, ${clientData.poblacion}, ${clientData.region} - ${clientData.pais} (${clientData.cp})</p>
             ${clientData.notas ? `<p style="margin: 15px 0 5px 0; color: ${primaryColor};"><strong>Notas del pedido:</strong> ${clientData.notas}</p>` : ''}
           </div>
         `;
 
-        await resend.emails.send({
+        const adminEmailPromise = resend.emails.send({
           from: 'Adven Za Sistema <atencion@advenza.com.mx>',
           to: 'atencion@advenza.com.mx', 
           subject: `💰 Nueva Venta Registrada: ${clientData.nombre} ${clientData.apellidos}`,
@@ -245,6 +256,9 @@ export async function POST(request: Request) {
             adminDetails
           )
         });
+
+        // Ejecutar envíos en paralelo para que la UI no se trabe
+        await Promise.all([clientEmailPromise, adminEmailPromise]);
 
       } catch (emailError) {
         console.error("Error al enviar correos:", emailError);

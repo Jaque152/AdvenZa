@@ -108,6 +108,13 @@
         "includes": "Conceptos básicos de finanzas, lectura de estados financieros y toma de decisiones financieras.",
         "modality": "100% en línea, con ejercicios prácticos y casos de estudio.",
         "duration": "7 horas."
+      },
+      "curso-innovacion-creatividad-empresarial": {
+        "title": "Curso de Innovación y Creatividad Empresarial",
+        "target": " Empresas que buscan fomentar la innovación en sus procesos.",
+        "includes": " Técnicas de creatividad, desarrollo de productos innovadores y gestión de la innovación.",
+        "modality": "100% en línea, con acceso a videos y ejercicios prácticos.",
+        "duration": "6 horas."
       }
     }
   },
@@ -191,8 +198,8 @@
       "careers": "Carreras",
       "contact": "Contacto",
       "privacy": "Política de Privacidad",
-      "terms": "Términos de Servicio",
-      "refunds": "Política de Reembolso"
+      "terms": "Términos y Condiciones de Uso",
+      "refunds": "Política de Devoluciones y Reembolsos"
     },
     "copyright": "© 2026 Adven Za. Todos los derechos reservados.",
     "slogan": "Hecho con pasión para emprendedores"
