@@ -35,9 +35,13 @@ export function LanguageSwitcher() {
 export function Navigation() {
   const t = useTranslations("Navigation");
   const locale = useLocale();
+  const pathname = usePathname();
+  
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const { itemCount, setIsCartOpen } = useCart();
+
+  const isHome = pathname === `/${locale}` || pathname === `/${locale}/`;
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -45,7 +49,6 @@ export function Navigation() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // ENLACES 
   const navLinks = [
     { name: t("programs"), href: `/${locale}/#programs` },
     { name: t("services"), href: `/${locale}/#pricing` },
@@ -53,6 +56,14 @@ export function Navigation() {
     { name: t("about"), href: `/${locale}/#about` },
     { name: t("contact"), href: `/${locale}/contact` },
   ];
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (!isHome && href.includes("#")) {
+      e.preventDefault(); // Detiene el enrutador bugeado de Next.js
+      window.location.href = href; // Fuerza al navegador a cargar la página correcta
+    }
+    setIsMobileMenuOpen(false);
+  };
 
   return (
     <motion.nav
@@ -73,7 +84,6 @@ export function Navigation() {
                 className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105" 
               />
             </div>
-            {/* Opcional: Puedes borrar este span si tu logo (imagen) ya contiene el texto "Adven Za." */}
             <span className="text-xl font-bold text-white tracking-tight">
               Adven Za<span className="text-fire-500">.</span>
             </span>
@@ -84,6 +94,7 @@ export function Navigation() {
               <Link 
                 key={link.name} 
                 href={link.href} 
+                onClick={(e) => handleNavClick(e, link.href)} // Agregamos el validador
                 className="text-sm font-medium text-night-400 hover:text-fire-400 transition-colors duration-300 relative group"
               >
                 {link.name}
@@ -102,7 +113,10 @@ export function Navigation() {
                 </span>
               )}
             </button>
-            <Link href={`/${locale}/contact`}>
+            <Link 
+              href={`/${locale}/contact`}
+              onClick={(e) => handleNavClick(e, `/${locale}/contact`)} // Agregamos el validador
+            >
               <Button className="bg-gradient-to-r from-fire-500 to-amber-500 hover:from-fire-600 hover:to-amber-600 text-white font-semibold shadow-lg shadow-fire-500/25">
                 {t("start")}
               </Button>
@@ -139,14 +153,17 @@ export function Navigation() {
                 <Link 
                   key={link.name} 
                   href={link.href} 
-                  onClick={() => setIsMobileMenuOpen(false)} 
+                  onClick={(e) => handleNavClick(e, link.href)} // Agregamos el validador móvil
                   className="block text-lg text-night-300 hover:text-fire-400 py-2"
                 >
                   {link.name}
                 </Link>
               ))}
               <div className="pt-4 space-y-3">
-                <Link href={`/${locale}/contact`} onClick={() => setIsMobileMenuOpen(false)}>
+                <Link 
+                  href={`/${locale}/contact`} 
+                  onClick={(e) => handleNavClick(e, `/${locale}/contact`)} // Agregamos el validador móvil
+                >
                   <Button className="w-full bg-gradient-to-r from-fire-500 to-amber-500 hover:from-fire-600 hover:to-amber-600 text-white font-semibold">
                     {t("start")}
                   </Button>

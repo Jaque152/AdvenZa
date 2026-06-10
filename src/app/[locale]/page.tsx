@@ -744,6 +744,15 @@ function PageContent() {
 }
 
 export default function Home() {
+  useEffect(() => {
+  if (window.location.hash) {
+    const id = window.location.hash.substring(1);
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+}, []);
   return (
     <main className="min-h-screen bg-night-950">
       <HeroSection />
